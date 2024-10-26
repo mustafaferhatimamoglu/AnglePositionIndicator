@@ -92,9 +92,6 @@ int __cdecl main(int argc, char** argv)
 	int a1 = 1234;
 	char* str;
 
-	std::string _stop = "STOP";
-	//y += _start;
-
 	while (true)
 	{
 		a1++;
@@ -104,6 +101,14 @@ int __cdecl main(int argc, char** argv)
 		//sleep_until(system_clock::now() + 1s);
 		sleep_for(100ms);
 	}
+
+
+
+
+
+
+
+
 	if (iResult == SOCKET_ERROR) {
 		printf("send failed with error: %d\n", WSAGetLastError());
 		closesocket(ConnectSocket);
